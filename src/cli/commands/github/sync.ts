@@ -637,4 +637,8 @@ will be stored there.`),
   },
 }
 
+export function file_exists(root: string, file: string): boolean {
+  return fs.existsSync(path.join(root, file))
+}
+
 export default command
